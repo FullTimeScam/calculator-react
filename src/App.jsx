@@ -4,7 +4,7 @@ const App = () => {
   return (
     <div className="bg-DOSGreen min-h-screen flex flex-col items-center justify-center">
       <h2 className="text-4md font-bold text-white">나우누리 </h2>
-      <h1 className="text-4xl font-bold text-white mb-8">온-라인 칼큐레다</h1>
+      <h1 className="text-4xl font-bold text-white mb-8">온-라인 칼구레다</h1>
       <h2 className="text-4md font-mono text-white">
         256byte 당 通信料 300원 차감
       </h2>
