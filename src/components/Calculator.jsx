@@ -1,4 +1,3 @@
-import Button from "./Button";
 import Result from "./Result";
 import { useState } from "react";
 import ButtonNumber from "./ButtonNumber";
@@ -7,13 +6,12 @@ import ButtonEnter from "./ButtonEnter";
 import ButtonDelete from "./ButtonDelete";
 
 const Calculator = () => {
-  //   const [result, setResult] = useState("버튼을 눌러라");
   const [result, setResult] = useState("0");
   const [temp, setTemp] = useState("");
   const [operator, setOperator] = useState("");
 
   return (
-    <div className="bg-gray-300 p-4 shadow-md">
+    <div className="bg-gray-100 p-5 shadow-xl">
       <Result result={result} />
       <div className=" grid grid-cols-4 gap-2 mt-4">
         <ButtonNumber name="1" result={result} setResult={setResult} />
