@@ -3,12 +3,10 @@ import Calculator from "./components/Calculator";
 const App = () => {
   return (
     <div className="bg-DOSGreen min-h-screen flex flex-col items-center justify-center">
-      <h2 className="text-4md font-bold text-white">
-        나우누리 (주)나우콤.1994{" "}
-      </h2>
+      <h2 className="text-4md font-bold text-white">나우누리 </h2>
       <h1 className="text-4xl font-bold text-white mb-8">온-라인 계산기</h1>
-      <h2 className="text-4md font-bold text-white">
-        256byte 당 통신비 300원 차감
+      <h2 className="text-4md font-mono text-white">
+        256byte 당 通信料 300원 차감
       </h2>
       <div className="bg-gray-300 border-2 border-gray-500 p-2 w-auto">
         <div className="flex justify-between items-center bg-gray-400 border-b-2 border-gray-500 p-1">
@@ -21,6 +19,10 @@ const App = () => {
         </div>
         <Calculator />
       </div>
+      <h2 className="text-4md font-mono font-thin text-white text-right">
+        {/*텍스트를 오른쪽 정렬하고 싶은데 안된다.*/}
+        (주)나우콤.1994
+      </h2>
     </div>
   );
 };
