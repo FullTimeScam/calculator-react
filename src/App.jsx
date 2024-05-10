@@ -1,6 +1,12 @@
 import Calculator from "./components/Calculator";
+import React from "react";
 
 const App = () => {
+  const ClickAlert = (message) => {
+    return () => {
+      alert(message);
+    };
+  };
   return (
     <div className="bg-DOSGreen min-h-screen flex flex-col items-center justify-center">
       <h2 className="text-4md font-bold text-white">나우누리 </h2>
@@ -12,9 +18,24 @@ const App = () => {
         <div className="flex justify-between items-center bg-gray-400 border-b-2 border-gray-500 p-1">
           <span className="text-black pl-2 font-bold">계산기</span>
           <div>
-            <button className="bg-gray-300 w-4 h-4 mr-1">ㅡ</button>
-            <button className="bg-gray-300 w-4 h-4 mr-1">□</button>
-            <button className="bg-gray-300 w-4 h-4 mr-1">X</button>
+            <button
+              className="bg-gray-300 w-4 h-4 mr-1"
+              onClick={ClickAlert("요금 4,832원 부과!")}
+            >
+              ㅡ
+            </button>
+            <button
+              className="bg-gray-300 w-4 h-4 mr-1"
+              onClick={ClickAlert("요금 7,832원 부과!")}
+            >
+              □
+            </button>
+            <button
+              className="bg-gray-300 w-4 h-4 mr-1"
+              onClick={ClickAlert("요금 2,832원 부과!")}
+            >
+              X
+            </button>
           </div>
         </div>
         <Calculator />
